@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map.component.css">
+    <title>commune</title>
+</head>
+<body>
+<header>
+<h1>la commune de Solliès Solliès-Pont</h1>
+</header>
+Le territoire était habité dans l'Antiquité par les Celto-Ligures qui avaient déjà commencé à défricher les forêts, cultiver la terre et assécher les marais. Selon Étienne Garcin26, la vallée du Gapeau était peuplée par le peuple celto-ligure des Bormani et avaient le village de Solliès-ville comme emplacement de leur chef-lieu. Sous l'occupation romaine, la ville de Solliès était nommée Sollinensis civitas. L'utilisation du terme civitas montre qu'elle fut autrefois la ville dominante de son territoire. Son importance se poursuivra jusqu'au Moyen Age où elle était l'une des principales communes de la Basse-Provence et elle finit par décroître à la suite de la séparation de la commune en quatre : Solliès-ville, Solliès-Pont, Solliès-Toucas et Solliès-Farlède (devenue La Farlède).
+<h2>les ecoles de la commune </h2>
+<div>nombre d'ecoles : {{nombreEcoles}}</div>
+<iframe src="https://data.education.gouv.fr/explore/embed/dataset/fr-en-annuaire-education/table/?disjunctive.type_etablissement&disjunctive.code_postal&disjunctive.nom_commune&disjunctive.appartenance_education_prioritaire&disjunctive.libelle_academie&disjunctive.libelle_region&disjunctive.ministere_tutelle&static=false&datasetcard=false" width="400" height="300" frameborder="0"></iframe>
+
+<h1>ecole numero 1</h1>
+<p>{{textecole1}}</p>
+<iframe [src]= position|sanitizer ></iframe>
+<a routerLink="contact">contact</a>
+<h1>ecole numero 2</h1>
+<p>{{textecole2}}</p>
+<iframe [src]= position|sanitizer ></iframe>
+<a routerLink="contact">contact</a>
+<h1>ecole numero 3</h1>
+<p>{{textecole3}}</p>
+<iframe [src]= position|sanitizer ></iframe>
+<a routerLink="contact">contact</a>
+<router-outlet/>
+
+<footer>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam beatae amet hic odit, porro expedita ad corporis. Quos, ipsum necessitatibus repellendus inventore optio ducimus modi, dicta officiis, placeat corrupti eveniet?</p>
+</footer>
+</body>
+</html>

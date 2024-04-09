@@ -1,0 +1,39 @@
+<style>
+    form{
+    border: black 1px solid;
+    width: 400px;
+    margin:40px auto ;
+    }
+div{
+display: flex;
+justify-content: space-between;
+}
+div *{
+margin: 10px;
+}
+textarea{
+resize: none;
+}
+div input{
+border: black 1px solid;
+}
+form input[type="submit"] {
+margin: 10px;
+border: 1px solid black;
+}
+</style>
+<header>
+<h2>contacter l'ecole</h2>
+</header>
+<form action="#" method="get">
+<div>
+<label for="nom">votre nom :</label><input type="text" id="nom">
+</div>
+<div>
+<label for="prenom">votre prenom :</label><input type="text" id="prenom">
+</div>
+<div>
+<label for="message">votre message :</label><textarea id="message" cols="30" rows="10"></textarea>
+</div>
+<input type="submit" value="envoyer">
+</form>
